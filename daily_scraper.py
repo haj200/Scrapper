@@ -112,6 +112,6 @@ if new_data:
     all_data.extend(new_data)
     with open(FILENAME, "w", encoding="utf-8") as f:
         json.dump(all_data, f, ensure_ascii=False, indent=2)
-    print(f"✅ {len(new_data)} nouvelles données ajoutées pour {TODAY}.")
+    print(f"{len(new_data)} nouvelles données ajoutées pour {TODAY}.")
 else:
-    print("ℹ️ Aucune donnée nouvelle trouvée pour aujourd'hui.")
+    print("Aucune donnée nouvelle trouvée pour aujourd'hui.")
