@@ -1,0 +1,17 @@
+# Moroccan Public Procurement Scraper
+
+This Python script scrapes Moroccan public procurement data from https://www.marchespublics.gov.ma.
+
+## Files
+
+- `daily_scraper.py`: Scrapes today's published procurement notices.
+- `full_scraper.py`: Scrapes all pages historically.
+- `requirements.txt`: Required Python packages.
+
+## Usage
+
+```bash
+pip install -r requirements.txt
+python daily_scraper.py
+
+
