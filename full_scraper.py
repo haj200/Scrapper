@@ -6,7 +6,7 @@ import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
-MAX_PAGE = 17125
+MAX_PAGE = 17145
 MAX_WORKERS = 10        # Ne PAS augmenter plus de 15 pour éviter blocage IP
 RETRIES = 3
 TIMEOUT = 10
