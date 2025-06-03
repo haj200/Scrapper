@@ -99,7 +99,7 @@ def process_page(page):
         return []
 
 # Traitement parallèle
-max_pages = 100
+max_pages = 1000
 with ThreadPoolExecutor(max_workers=10) as executor:
     futures = {executor.submit(process_page, page): page for page in range(1, max_pages + 1)}
     for future in tqdm(as_completed(futures), total=max_pages):
