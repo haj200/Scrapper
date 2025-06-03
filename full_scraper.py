@@ -111,6 +111,6 @@ with open("donnees_marches.json", "w", encoding='utf-8') as f:
 if failed_pages:
     with open("pages_non_traitees.json", "w") as f:
         json.dump(failed_pages, f)
-    print(f"⚠️ {len(failed_pages)} pages ont échoué. Liste enregistrée dans pages_non_traitees.json")
+    print(f"{len(failed_pages)} pages ont échoué. Liste enregistrée dans pages_non_traitees.json")
 
-print(f"✅ Extraction terminée. {len(all_data)} enregistrements sauvegardés.")
+print(f"Extraction terminée. {len(all_data)} enregistrements sauvegardés.")
